@@ -7,7 +7,7 @@ identity; this directory is the per-team image library.
 ## Layout
 
 - `clubs/<slug>.png` — one crest per affiliated Roscommon club, plus a
-  `-post.png` derivative sized for a forum post.
+  112px square `-post.png` derivative sized for the forum medallion.
 - `counties/<slug>.png` — the 32 counties plus London, New York, Lancashire,
   and Warwickshire.
 - `fallback/gaa-logo.png` — the GAA mark used for amalgamations, second teams
@@ -47,8 +47,11 @@ pnpm crests:scrape --force   # re-download even when a cached copy exists
 Downloads are cached under `.data/crest-downloads/` and Wikimedia API responses
 under `.data/crest-scrape-cache.json`, so a re-run is quick and polite to the
 upstream sources. The script re-encodes every image to PNG (maximum 192px for
-the portal, 56px for posts), keeps transparency, and fails the run if any team
-ends up without a usable image.
+the portal, with forum artwork optically fitted inside a fixed 112px square),
+keeps transparency, and fails the run if any team ends up without a usable
+image. The forum fit uses the artwork's bounding-circle diameter so narrow
+shields and round crests retain comparable visual weight while preserving their
+original aspect ratios.
 
 ## How a team resolves to a crest
 
