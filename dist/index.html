@@ -1,17 +1,48 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Roscommon GAA Crest Assets</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GAA crest assets</title>
     <style>
-      body { font-family: system-ui, sans-serif; max-width: 760px; margin: 48px auto; padding: 0 24px; color: #17222d; }
-      h1 { margin-bottom: 12px; }
-      p { line-height: 1.6; }
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 40rem;
+        margin: 3rem auto;
+        padding: 0 1.5rem;
+        line-height: 1.6;
+        color: #17222d;
+      }
+      h1 {
+        margin-bottom: 0.5rem;
+      }
+      li {
+        margin: 0.25rem 0;
+      }
     </style>
   </head>
   <body>
-    <h1>Roscommon GAA crest assets</h1>
-    <p>This origin serves the per-team crest images used by the Roscommon GAA Results Service. It contains only public team-identification artwork and is intentionally image-only; the service API and operator interface are not exposed here.</p>
+    <h1>GAA crest assets</h1>
+    <p>
+      This origin serves the 92 club, 36 county and
+      1 fallback crest image
+      embedded in Roscommon GAA results posts. It is a generated mirror: the
+      service API and operator interface are not hosted here, and no image is
+      edited in this repository.
+    </p>
+    <ul>
+      <li>
+        <a href="crests/registry.json">crests/registry.json</a> - the register
+        behind the images
+      </li>
+      <li>
+        <a href="crests/README.md">crests/README.md</a> - provenance, sources
+        and licences
+      </li>
+    </ul>
+    <p>
+      Each crest remains the property of its club or county board, and inclusion
+      here identifies the team in results coverage only.
+    </p>
   </body>
 </html>
